@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "npm run build:sanity && npm run build:web",
-    "build:web": "next build",
-    "start:web": "next start"
+    "build": "next build",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -19,6 +18,8 @@
     "@types/node": "^16.10.5",
     "@types/react": "^17.0.29",
     "autoprefixer": "^10.3.7",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
     "postcss": "^8.3.9",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^14.0.2",
