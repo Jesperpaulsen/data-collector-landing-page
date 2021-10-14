@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "build": "pnpm recursive run build"
+    "build": "pnpm recursive run build",
+    "dev": "pnpm recursive run dev"
   }
 }
