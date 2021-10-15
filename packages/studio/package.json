@@ -7,7 +7,7 @@
   "author": "Jesper Paulsen <jesper@jesper.no>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
+    "dev": "sanity start",
     "test": "sanity check",
     "build": "sanity build public -y"
   },

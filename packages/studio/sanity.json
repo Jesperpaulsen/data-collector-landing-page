@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "Basic Next.js Site",
+    "name": "Data Collector",
     "basePath": "/studio"
   },
   "api": {
@@ -22,8 +22,10 @@
       ]
     }
   },
-  "parts": [{
-    "name": "part:@sanity/base/schema",
-    "path": "./schemas/schema"
-  }]
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
 }
