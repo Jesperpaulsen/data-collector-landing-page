@@ -1,15 +1,15 @@
 {
-  "name": "sanitytemplatecontent",
+  "name": "sanity-studio-data-collector",
   "private": true,
   "version": "1.0.1",
   "description": "",
   "main": "package.json",
-  "author": "Knut Melvær <knut@sanity.io>",
+  "author": "Jesper Paulsen <jesper@jesper.no>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
     "test": "sanity check",
-    "build": "sanity build"
+    "build": "sanity build public -y"
   },
   "keywords": [
     "sanity"
