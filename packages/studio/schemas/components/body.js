@@ -9,7 +9,7 @@ export default {
       title: "Body Parts",
       of: [
         {
-          type: "blockContent",
+          type: "blockContentWrapper",
         },
         {
           type: "defaultImage",

@@ -4,4 +4,6 @@ interface BlockPart extends Block {
   type: "_block";
 }
 
-export type BlockContent = BlockPart[];
+export interface BlockContent {
+  text: BlockPart[];
+}

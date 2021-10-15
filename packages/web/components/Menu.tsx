@@ -20,7 +20,7 @@ const Menu: React.FC = () => {
     <div className="flex justify-between p-2 md:p-6">
       <div>
         <Link href="/" passHref>
-          <a className="hover:underline">Data Collectior</a>
+          <a className="hover:underline">Data Collector</a>
         </Link>
       </div>
       <div>

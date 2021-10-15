@@ -20,6 +20,8 @@ importers:
       prop-types: ^15.7.2
       react: ^17.0.2
       react-dom: ^17.0.2
+      react-icons: ^4.3.1
+      sanity-mobile-preview: ^1.0.8
       styled-components: ^5.2.0
     dependencies:
       '@sanity/base': 2.21.3_66dd6d85d59606540720c337df749b1b
@@ -34,17 +36,21 @@ importers:
       prop-types: 15.7.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
+      react-icons: 4.3.1_react@17.0.2
+      sanity-mobile-preview: 1.0.8_react@17.0.2
       styled-components: 5.3.1_react-dom@17.0.2+react@17.0.2
     devDependencies:
       '@sanity/cli': 2.21.3
 
   packages/web:
     specifiers:
+      '@sanity/block-content-to-react': ^3.0.0
       '@sanity/types': ^2.21.3
       '@types/node': ^16.10.5
       '@types/react': ^17.0.29
       '@typescript-eslint/eslint-plugin': ^5.0.0
       autoprefixer: ^10.3.7
+      classnames: ^2.3.1
       eslint: 7.32.0
       eslint-config-next: 11.1.2
       eslint-config-prettier: ^8.3.0
@@ -62,6 +68,8 @@ importers:
       tailwindcss: ^2.2.16
       typescript: ^4.4.4
     dependencies:
+      '@sanity/block-content-to-react': 3.0.0_react@17.0.2
+      classnames: 2.3.1
       next: 11.1.2_8e3522129ef2816b3c737f17aecb3a9d
       next-sanity: 0.4.0_react@17.0.2
       react: 17.0.2
@@ -10878,6 +10886,14 @@ packages:
       react: 17.0.2
     dev: false
 
+  /react-icons/4.3.1_react@17.0.2:
+    resolution: {integrity: sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 17.0.2
+    dev: false
+
   /react-intersection-observer/8.32.1_react@17.0.2:
     resolution: {integrity: sha512-FOmMkMw7MeJ8FkuADpU8TRcvGuTvPB+DRkaikS1QXcWArYLCWC3mjRorq2XeRGBuqmaueOBd27PUazTu9AgInw==}
     peerDependencies:
@@ -11510,6 +11526,15 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       diff-match-patch: 1.0.5
+    dev: false
+
+  /sanity-mobile-preview/1.0.8_react@17.0.2:
+    resolution: {integrity: sha512-GcUk6V9V+TLb8Gr2xXcQizLPlgwdH01oSTGnoU0pyg4A618UI+3HFdA03pd5T3s32Ppj7Vqkso4o8dC8JaZf5w==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0
+    dependencies:
+      react: 17.0.2
     dev: false
 
   /sax/1.2.4:

@@ -4,5 +4,13 @@ import faqs from "./faqs";
 import faq from "./faq";
 import defaultImage from "./defaultImage";
 import signUpForm from "./signUpForm";
-
-export default [blockContent, body, faqs, faq, defaultImage, signUpForm];
+import blockContentWrapper from "./blockContentWrapper";
+export default [
+  blockContent,
+  body,
+  faqs,
+  faq,
+  defaultImage,
+  signUpForm,
+  blockContentWrapper,
+];
