@@ -1,3 +1,4 @@
+import { BodyQuery } from "./BodyQuery";
 import sanity from "./Sanity";
 
 export interface BaseDataType {
@@ -6,16 +7,12 @@ export interface BaseDataType {
   body?: any;
 }
 
-interface SanityPageServiceOptions {
-  injectBody?: boolean;
-  injectHero?: boolean;
-  bodyQueryPartsToOverride?: { [queryPart: string]: { query: string } };
-}
 export default class SanityPageService<T> {
   query = "";
 
   constructor(query: string) {
-    this.query = query;
+    const injectedQuery = injectQuery(query, BodyQuery);
+    this.query = injectedQuery;
   }
 
   getPreviewHook(initialData: T & BaseDataType, params = {}) {
@@ -48,7 +45,7 @@ export default class SanityPageService<T> {
     return { props, notFound };
   }
 
-  fetchPaths(schemaType) {
+  fetchPaths(schemaType: string) {
     const query = `*[_type == "${schemaType}" && defined(slug.current)]{
       "params": {
         "slug": slug.current
