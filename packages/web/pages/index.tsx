@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { GetStaticProps, NextPage } from "next";
 import { BodyBlock } from "../types/BodyBlock";
 import SanityPageService from "../services/SanityPageService";
