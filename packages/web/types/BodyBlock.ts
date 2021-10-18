@@ -1,9 +1,8 @@
-import { BlockContent } from "./BlockContent";
 import DefaultImage from "./DefaultImage";
 import { FAQs } from "./FAQs";
-import { SignUpForm } from "./SignUpForm";
+import { ISignUpForm } from "./SignUpForm";
 
-type Bodyparts = (DefaultImage | FAQs | SignUpForm)[];
+type Bodyparts = (DefaultImage | FAQs | ISignUpForm)[];
 
 export interface BodyBlock {
   bodyParts: Bodyparts;
