@@ -3,7 +3,7 @@ import { BodyBlock } from "../types/BodyBlock";
 import BlockContentWrapper from "./blockContentWrapper/BlockContentWrapper";
 import SignUpForm from "./SignUpForm";
 
-const notImplemented = ({ type }) => <div>Not implemented {type}</div>;
+// const notImplemented = ({ type }) => <div>Not implemented {type}</div>;
 
 type Props = { [key: string]: any };
 
