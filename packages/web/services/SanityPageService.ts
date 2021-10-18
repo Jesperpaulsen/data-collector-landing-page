@@ -10,8 +10,11 @@ export interface BaseDataType {
 export default class SanityPageService<T> {
   query = "";
 
-  constructor(query: string) {
-    const injectedQuery = injectQuery(query, BodyQuery);
+  constructor(query: string, { injectBody } = { injectBody: true }) {
+    let injectedQuery = query;
+    if (injectBody) {
+      injectedQuery = injectQuery(query, BodyQuery);
+    }
     this.query = injectedQuery;
   }
 

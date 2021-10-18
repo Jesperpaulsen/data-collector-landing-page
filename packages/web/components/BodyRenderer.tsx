@@ -1,11 +1,15 @@
 import React from "react";
 import { BodyBlock } from "../types/BodyBlock";
 import BlockContentWrapper from "./blockContentWrapper/BlockContentWrapper";
+import SignUpForm from "./SignUpForm";
 
 const notImplemented = ({ type }) => <div>Not implemented {type}</div>;
 
-const components: { [id: string]: React.FC<any> } = {
+type Props = { [key: string]: any };
+
+const components: { [id: string]: React.FC<Props> } = {
   blockContentWrapper: BlockContentWrapper,
+  signUpForm: SignUpForm,
 };
 
 export const BodyRenderer: React.FC<BodyBlock> = ({ bodyParts }) => {
@@ -19,7 +23,10 @@ export const BodyRenderer: React.FC<BodyBlock> = ({ bodyParts }) => {
           );
         }
         return (
-          <Component key={bodyPart._key || `bodyPart-${i}`} {...bodyPart} />
+          <Component
+            key={(bodyPart._key as string) || `bodyPart-${i}`}
+            {...bodyPart}
+          />
         );
       })}
     </>

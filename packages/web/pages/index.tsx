@@ -4,6 +4,7 @@ import { BodyBlock } from "../types/BodyBlock";
 import SanityPageService from "../services/SanityPageService";
 import { SanityDocument } from "@sanity/types";
 import { BodyRenderer } from "../components/BodyRenderer";
+import Button from "../components/button/Button";
 
 const query = `*[_id == "homePage"][0]{
 
@@ -22,6 +23,7 @@ const Index: NextPage<HomePage> = (initialData) => {
   return (
     <div className="flex flex-col justify-center h-full items-center text-center p-4 text-black">
       <BodyRenderer bodyParts={data.body.bodyParts} />
+      <Button href="/about">Sign Up</Button>
     </div>
   );
 };
