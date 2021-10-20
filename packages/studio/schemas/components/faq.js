@@ -9,7 +9,7 @@ export default {
       title: "Question",
     },
     {
-      type: "string",
+      type: "blockContentWrapper",
       name: "answer",
       title: "Answer",
     },

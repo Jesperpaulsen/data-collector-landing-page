@@ -34,3 +34,5 @@ yarn-error.log*
 .vercel
 
 packages/studio/.env.development
+
+*.gz

@@ -15,23 +15,23 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.21.3",
+    "@sanity/base": "^2.21.5",
     "@sanity/components": "^2.14.0",
-    "@sanity/core": "^2.21.3",
+    "@sanity/core": "^2.21.5",
     "@sanity/data-aspects": "^2.18.0",
-    "@sanity/default-layout": "^2.21.3",
-    "@sanity/default-login": "^2.21.3",
-    "@sanity/desk-tool": "^2.21.3",
-    "@sanity/form-builder": "^2.21.3",
-    "@sanity/vision": "^2.21.3",
+    "@sanity/default-layout": "^2.21.5",
+    "@sanity/default-login": "^2.21.4",
+    "@sanity/desk-tool": "^2.21.5",
+    "@sanity/form-builder": "^2.21.5",
+    "@sanity/vision": "^2.21.5",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "sanity-mobile-preview": "^1.0.8",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "@sanity/cli": "^2.21.3"
+    "@sanity/cli": "^2.21.5"
   }
 }
