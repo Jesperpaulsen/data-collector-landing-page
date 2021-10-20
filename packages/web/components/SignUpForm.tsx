@@ -1,4 +1,4 @@
-import { ISignUpForm } from "../types/SignUpForm";
+import { ISignUpForm } from "../types/ISignUpForm";
 import Input from "./Input";
 import Button from "./button/Button";
 import { useState } from "react";

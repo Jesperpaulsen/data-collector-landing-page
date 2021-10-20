@@ -1,6 +1,7 @@
 import React from "react";
 import { BodyBlock } from "../types/BodyBlock";
 import BlockContentWrapper from "./blockContentWrapper/BlockContentWrapper";
+import FAQs from "./faq/FAQs";
 import SignUpForm from "./SignUpForm";
 
 // const notImplemented = ({ type }) => <div>Not implemented {type}</div>;
@@ -10,6 +11,7 @@ type Props = { [key: string]: any };
 const components: { [id: string]: React.FC<Props> } = {
   blockContentWrapper: BlockContentWrapper,
   signUpForm: SignUpForm,
+  faqs: FAQs,
 };
 
 export const BodyRenderer: React.FC<BodyBlock> = ({ bodyParts }) => {
