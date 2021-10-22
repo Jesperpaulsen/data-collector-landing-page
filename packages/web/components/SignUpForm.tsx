@@ -50,7 +50,7 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
   };
 
   return (
-    <div className="border p-4 md:p-6 rounded-lg flex flex-col items-center">
+    <div className="border p-4 md:p-6 rounded-lg flex flex-col items-center max-w-xl">
       <div>{title}</div>
       <div className="text-sm">{description}</div>
       {submitted ? (
