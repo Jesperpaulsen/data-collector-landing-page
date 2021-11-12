@@ -9,7 +9,7 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
 
   const checkEmail = (email: string) => {
     const re =
-      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@gmail.com/g;
     return re.test(email);
   };
 
@@ -21,7 +21,9 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
   const sendEmail = async () => {
     const validEmail = checkEmail(email);
     if (!validEmail) {
-      setError("Please enter a valid email");
+      setError(
+        "Please enter a valid gmail adress (Google Account). If the problems persists, send an email to jespergp@stud.ntnu.no"
+      );
       return;
     }
     try {
@@ -55,15 +57,20 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
       <div className="flex justify-center">
         <div className="md:p-6 flex flex-col items-center mb-10 max-w-xl">
           <div>{title}</div>
-          <div className="text-sm text-center">{description}</div>
+          {!submitted && (
+            <div className="text-sm text-center pt-2">{description}</div>
+          )}
           {submitted ? (
-            <div>Thanks for submitting</div>
+            <div className="text-center text-green-700">
+              Thanks for submitting. You will soon recieve the first survey and
+              more information.
+            </div>
           ) : (
             <>
               <div className="w-64 md:w-96 pt-4">
                 <Input
                   onChange={onEmailChanged}
-                  placeholder="Enter your email"
+                  placeholder="Enter the email of your Google Account"
                   type="email"
                 />
               </div>
@@ -72,7 +79,7 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
               </div>
             </>
           )}
-          {error && <div className="text-sm text-red-800">{error}</div>}
+          {error && <div className="text-sm text-red-800 pt-2">{error}</div>}
         </div>
       </div>
     </div>
