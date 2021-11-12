@@ -5,6 +5,8 @@ import faq from "./faq";
 import defaultImage from "./defaultImage";
 import signUpForm from "./signUpForm";
 import blockContentWrapper from "./blockContentWrapper";
+import button from "./button";
+
 export default [
   blockContent,
   body,
@@ -13,4 +15,5 @@ export default [
   defaultImage,
   signUpForm,
   blockContentWrapper,
+  button,
 ];

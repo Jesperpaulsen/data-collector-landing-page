@@ -18,6 +18,7 @@ export default {
           type: "faqs",
         },
         { type: "signUpForm" },
+        { type: "button" },
       ],
     },
   ],
