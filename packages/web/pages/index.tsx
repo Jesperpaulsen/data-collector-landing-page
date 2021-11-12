@@ -20,9 +20,8 @@ const Index: NextPage<HomePage> = (initialData) => {
   const { data } = pageService.getPreviewHook(initialData)();
 
   return (
-    <div className="flex flex-col justify-center h-full items-center text-center p-4 text-black">
+    <div className="flex flex-col justify-center h-full items-center text-center p-4">
       <BodyRenderer bodyParts={data.body.bodyParts} />
-      <Button href="/about">Sign Up</Button>
     </div>
   );
 };

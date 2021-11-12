@@ -19,7 +19,7 @@ const Privacy: NextPage<PrivacyPage> = (initialData) => {
   const { data } = pageService.getPreviewHook(initialData)();
 
   return (
-    <div className="flex flex-col items-center h-full pt-20 px-4">
+    <div className="flex flex-col items-center h-full px-4">
       <BodyRenderer bodyParts={data.body.bodyParts} />
     </div>
   );

@@ -50,22 +50,30 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
   };
 
   return (
-    <div className="border p-4 md:p-6 rounded-lg flex flex-col items-center max-w-xl">
-      <div>{title}</div>
-      <div className="text-sm">{description}</div>
-      {submitted ? (
-        <div>Thanks for submitting</div>
-      ) : (
-        <>
-          <div className="w-72 md:w-96 pt-4">
-            <Input onChange={onEmailChanged} placeholder="Enter your email" />
-          </div>
-          <div className="pt-4">
-            <Button onClick={sendEmail}>Sign up</Button>
-          </div>
-        </>
-      )}
-      {error && <div className="text-sm text-red-800">{error}</div>}
+    <div>
+      <div className="border border-t" />
+      <div className="flex justify-center">
+        <div className="p-4 md:p-6 flex flex-col items-center mb-10 max-w-xl">
+          <div>{title}</div>
+          <div className="text-sm text-center">{description}</div>
+          {submitted ? (
+            <div>Thanks for submitting</div>
+          ) : (
+            <>
+              <div className="w-72 md:w-96 pt-4">
+                <Input
+                  onChange={onEmailChanged}
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div className="pt-4">
+                <Button onClick={sendEmail}>Sign up</Button>
+              </div>
+            </>
+          )}
+          {error && <div className="text-sm text-red-800">{error}</div>}
+        </div>
+      </div>
     </div>
   );
 };

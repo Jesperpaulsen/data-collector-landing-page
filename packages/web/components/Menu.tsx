@@ -2,6 +2,10 @@ import Link from "next/link";
 
 const menus = [
   {
+    path: "/sign-up",
+    label: "Sign Up",
+  },
+  {
     path: "/about",
     label: "About",
   },
@@ -17,7 +21,7 @@ const menus = [
 
 const Menu: React.FC = () => {
   return (
-    <div className="flex justify-between p-2 md:p-6">
+    <div className="flex justify-between p-2 md:p-6 text-gray-100">
       <div>
         <Link href="/" passHref>
           <a className="hover:underline">Data Collector</a>

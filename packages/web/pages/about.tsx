@@ -19,7 +19,7 @@ const About: NextPage<AboutPage> = (initialData) => {
   const { data } = pageService.getPreviewHook(initialData)();
 
   return (
-    <div className="flex flex-col items-center h-full text-center pt-20 px-4 text-black">
+    <div className="flex flex-col items-center h-full px-4 text-black">
       <BodyRenderer bodyParts={data.body.bodyParts} />
     </div>
   );

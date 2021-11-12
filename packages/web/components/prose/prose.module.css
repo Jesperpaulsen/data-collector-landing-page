@@ -101,7 +101,7 @@
   & h2,
   & h3,
   & h4 {
-    @apply text-black;
+    @apply text-primary;
   }
 
   & * + h2,
