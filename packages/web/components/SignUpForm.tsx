@@ -60,7 +60,7 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
             <div>Thanks for submitting</div>
           ) : (
             <>
-              <div className="w-72 md:w-96 pt-4">
+              <div className="w-56 md:w-96 pt-4">
                 <Input
                   onChange={onEmailChanged}
                   placeholder="Enter your email"

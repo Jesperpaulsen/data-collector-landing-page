@@ -5,7 +5,6 @@ import type { AppProps } from "next/app";
 import Menu from "../components/Menu";
 
 const DataCollectorPage: NextPage<AppProps> = ({ Component, pageProps }) => {
-  pageProps.className = "flex-grow pb-10 bg-green-50";
   return (
     <>
       <Head>
