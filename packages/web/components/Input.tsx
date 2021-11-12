@@ -10,6 +10,7 @@ interface InputProps {
   label?: string;
   textArea?: boolean;
   numberOfRows?: number;
+  type?: "text" | "email" | "password";
 }
 
 const Input: React.FC<InputProps> = ({
@@ -19,6 +20,7 @@ const Input: React.FC<InputProps> = ({
   label,
   textArea = false,
   numberOfRows = 6,
+  type = "text",
 }) => {
   const [value, setValue] = useState(initialValue);
 
@@ -41,7 +43,7 @@ const Input: React.FC<InputProps> = ({
         />
       ) : (
         <input
-          type="text"
+          type={type}
           className={className}
           placeholder={placeholder}
           value={value}

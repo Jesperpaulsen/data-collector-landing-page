@@ -53,17 +53,18 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
     <div>
       <div className="border border-t" />
       <div className="flex justify-center">
-        <div className="p-4 md:p-6 flex flex-col items-center mb-10 max-w-xl">
+        <div className="md:p-6 flex flex-col items-center mb-10 max-w-xl">
           <div>{title}</div>
           <div className="text-sm text-center">{description}</div>
           {submitted ? (
             <div>Thanks for submitting</div>
           ) : (
             <>
-              <div className="w-56 md:w-96 pt-4">
+              <div className="w-64 md:w-96 pt-4">
                 <Input
                   onChange={onEmailChanged}
                   placeholder="Enter your email"
+                  type="email"
                 />
               </div>
               <div className="pt-4">
