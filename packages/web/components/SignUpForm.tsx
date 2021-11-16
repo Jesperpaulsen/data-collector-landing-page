@@ -37,11 +37,7 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
       );
       if (!res.ok) {
         const error = await res.json();
-        setError(
-          error.errors
-            ?.map((error) => `${error.field}: ${error.message}`)
-            .join(", ")
-        );
+        setError(error.errors?.map((error) => `${error.message} `).join(", "));
         return;
       }
       setSubmitted(true);

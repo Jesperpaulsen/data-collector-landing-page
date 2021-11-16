@@ -11,7 +11,6 @@ interface BlockContentWrapperProps {
 const BlockContentWrapper: React.FC<BlockContentWrapperProps> = ({
   blockContent,
 }) => {
-  console.log(blockContent);
   return (
     <Prose>
       <BlockContent
