@@ -51,7 +51,7 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
     <div>
       <div className="border border-t" />
       <div className="flex justify-center">
-        <div className="md:p-6 flex flex-col items-center mb-10 max-w-xl">
+        <div className="md:p-6 flex flex-col items-center mb-10 mt-10 max-w-xl">
           <div className="text-heading-xl">{title}</div>
           {!submitted && (
             <div className="text-sm text-center pt-2 text-gray-700">
