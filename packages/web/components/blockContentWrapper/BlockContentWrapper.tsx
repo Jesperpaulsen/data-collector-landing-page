@@ -6,13 +6,15 @@ import Prose from "../prose/prose";
 
 interface BlockContentWrapperProps {
   blockContent: Block[];
+  large?: boolean;
 }
 
 const BlockContentWrapper: React.FC<BlockContentWrapperProps> = ({
   blockContent,
+  large,
 }) => {
   return (
-    <Prose>
+    <Prose large={large}>
       <BlockContent
         blocks={blockContent}
         projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}

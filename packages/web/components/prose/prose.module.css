@@ -101,7 +101,7 @@
   & h2,
   & h3,
   & h4 {
-    @apply text-primary;
+    @apply text-green-800;
   }
 
   & * + h2,
@@ -139,7 +139,7 @@
   }
 
   & h1 {
-    @apply text-heading-xl md:text-heading-2xl xl:text-heading-3xl;
+    @apply text-5xl md:text-7xl md:pb-5 text-black;
   }
 
   & h2 {

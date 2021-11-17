@@ -20,7 +20,7 @@ const Privacy: NextPage<PrivacyPage> = (initialData) => {
 
   return (
     <div className="flex flex-col items-center h-full px-4">
-      <BodyRenderer bodyParts={data.body.bodyParts} />
+      <BodyRenderer bodyParts={data.body.bodyParts} white />
     </div>
   );
 };

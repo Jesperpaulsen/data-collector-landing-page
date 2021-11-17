@@ -21,7 +21,7 @@ const menus = [
 
 const Menu: React.FC = () => {
   return (
-    <div className="flex justify-between p-2 md:p-6 text-gray-100">
+    <div className="flex justify-between p-2 md:p-6 text-black">
       <div>
         <Link href="/" passHref>
           <a className="hover:underline">Data Collector</a>

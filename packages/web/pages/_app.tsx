@@ -9,11 +9,12 @@ const DataCollectorPage: NextPage<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>
-          Data Collector - raising awarenes around the digital climate footprint
+          Data Collector - raising awarenes around the internet's climate
+          footprint
         </title>
         <meta
           property="og:title"
-          content=" Data Collector - raising awarenes around the digital climate footprint"
+          content=" Data Collector - raising awarenes around the internet's climate footprint"
           key="title"
         />
       </Head>

@@ -20,7 +20,7 @@ const SignUp: NextPage<SignupPage> = (initialData) => {
 
   return (
     <div className="flex flex-col items-center h-full px-4 mb-10 text-black">
-      <BodyRenderer bodyParts={data.body.bodyParts} />
+      <BodyRenderer bodyParts={data.body.bodyParts} white />
     </div>
   );
 };

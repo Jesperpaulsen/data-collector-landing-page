@@ -20,7 +20,7 @@ const FAQ: NextPage<FAQPage> = (initialData) => {
 
   return (
     <div className="flex flex-col items-center h-full text-center px-4">
-      <BodyRenderer bodyParts={data.body.bodyParts} />
+      <BodyRenderer bodyParts={data.body.bodyParts} white />
     </div>
   );
 };

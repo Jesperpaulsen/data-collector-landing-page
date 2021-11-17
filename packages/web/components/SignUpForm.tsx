@@ -52,9 +52,11 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
       <div className="border border-t" />
       <div className="flex justify-center">
         <div className="md:p-6 flex flex-col items-center mb-10 max-w-xl">
-          <div>{title}</div>
+          <div className="text-heading-xl">{title}</div>
           {!submitted && (
-            <div className="text-sm text-center pt-2">{description}</div>
+            <div className="text-sm text-center pt-2 text-gray-700">
+              {description}
+            </div>
           )}
           {submitted ? (
             <div className="text-center text-green-700">
@@ -78,6 +80,7 @@ const SignUpForm: React.FC<ISignUpForm> = ({ title, description }) => {
           {error && <div className="text-sm text-red-800 pt-2">{error}</div>}
         </div>
       </div>
+      <div className="border border-b" />
     </div>
   );
 };
