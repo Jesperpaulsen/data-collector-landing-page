@@ -1,6 +1,13 @@
 import S from "@sanity/desk-tool/structure-builder";
 import { getPreview } from "./utils/getPreview";
-import { FiHome, FiInfo, FiGrid, FiArchive, FiEdit2 } from "react-icons/fi";
+import {
+  FiHome,
+  FiInfo,
+  FiGrid,
+  FiArchive,
+  FiEdit2,
+  FiBookmark,
+} from "react-icons/fi";
 
 export const getDefaultDocumentNode = ({ schemaType }) =>
   S.document().views(getPreview(schemaType));
@@ -59,5 +66,10 @@ export default () => {
             .views(getPreview("privacyPage"))
         )
         .icon(FiArchive),
+      S.divider(),
+      S.listItem()
+        .title("Tips")
+        .child(S.documentTypeList("tip").title("Tips"))
+        .icon(FiBookmark),
     ]);
 };
