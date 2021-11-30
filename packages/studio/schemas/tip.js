@@ -9,6 +9,12 @@ export default {
       title: "Title",
     },
     {
+      name: "published",
+      type: "boolean",
+      title: "Published",
+      initialValue: false,
+    },
+    {
       name: "message",
       type: "text",
       title: "Message",
